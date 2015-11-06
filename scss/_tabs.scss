@@ -1,0 +1,33 @@
+.o-tab-bar {
+    background-color: $bg-dark-gray;
+}
+.m-tabs {
+    width: 100rem;
+    padding:  1rem 0;
+    margin:  0 auto;
+}
+.a-tab {
+    list-style: none;
+    display: inline-block;
+    padding: 1rem;
+    margin-bottom: -1px;
+    a {
+        color: #fff;
+    }
+}
+.a-tab-active {
+    color: $yellow;
+    position: relative;
+    &:after {
+        content:'';
+        width: 0;
+    	height: 0;
+    	border-left: 10px solid transparent;
+    	border-right: 10px solid transparent;
+    	border-top: 10px solid $bg-dark-gray;
+
+        position: absolute;
+        bottom: -19px;
+        left: calc(50% - 10px);
+    }
+}

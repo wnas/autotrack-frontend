@@ -1,0 +1,11 @@
+header.header-page
+    section.header-content
+        h1.header-title test-title
+        nav.header-nav
+            ul.nav-bar
+                li.nav-item.nav-item-home
+                    a
+                each val in ['Auto zoeken', 'Auto samenstellen','Financieel','Mijn autotrack']
+                    li.nav-item
+                        a.nav-link
+                            span= val

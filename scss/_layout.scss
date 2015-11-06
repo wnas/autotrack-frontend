@@ -1,0 +1,102 @@
+// all things layout
+
+// desktop, full width with margin left and right
+.header-content,
+.content-title-bar,
+.footer-content,
+.main-content {
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.content-title-bar {
+    h2,
+    .dealer {
+        margin-top: .5rem;
+    }
+    h2,p {
+        width:640px;
+        display: inline-block;
+    }
+    .dealer {
+        float:right;
+        width: 300px;
+    }
+}
+
+.detail {
+    article {
+        display: table;
+    }
+
+    .content,
+    .dealer {
+        //display: table-cell;
+
+    }
+    .content {
+        margin-right: 2rem;
+
+    }
+    .dealer {
+        width: 300px;
+        float: right;
+        margin-top: -3rem;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom:0;
+    background-color: $bg-dark-gray;
+    width: 100%;
+    display: block;
+    padding: 2rem 0;
+}
+.footer-content {
+    color: #fff;
+    display: block;
+}
+// @media (max-width: $phone) {
+//     .detail .overview-list {
+//         outline: 1px dotted red;
+//         -webkit-columns: 1;
+//     }
+// }
+@media (max-width: $phablet)  {
+    .detail {
+        .main-content {
+            width: 100%;
+            display: block;
+        }
+        .dealer {
+            width: 100%;
+            display: block;
+            margin-top: 2rem;
+        }
+    }
+}
+
+.test {
+
+
+    h2 a {
+        float: right;
+    }
+    .main-content {
+        display: table;
+        article {
+            display: table-cell;
+            width: 728px;
+            padding-right: 40px;
+        }
+        aside {
+            display: table-cell;
+            width: 300;
+            .dealer-details {
+                padding: 10px;
+                background-color: $bg-light-gray;
+            }
+        }
+    }
+}

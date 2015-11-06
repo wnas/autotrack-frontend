@@ -1,0 +1,13 @@
+.button {
+    background-color: $blue;
+    color: #fff;
+    padding: .8rem 1rem;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.button-fullwidth {
+    width: 100%;
+    outline: 1px solid;
+}

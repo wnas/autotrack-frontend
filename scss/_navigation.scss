@@ -1,0 +1,43 @@
+.nav {
+	list-style:none;
+	padding:0;
+	position: relative;
+}
+.nav-item {
+	display: inline-block;
+	position: relative;
+}
+.nav-item-home {
+	width: 8rem;
+	background: url(../img/logo-autotrack.svg);
+	height: 1.5rem;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.nav-link {
+	text-decoration: none;
+	color: #000;
+	font-size: 14px;
+}
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 1rem;
+	left: 0;
+}
+.nav-link:hover + .dropdown-menu {
+	display:block;
+}
+
+@media (max-width: $phablet) {
+	.nav-item:not(.nav-item-home) {
+		display:none;
+	}
+	.navbar:hover .nav-item {
+		display:block;
+		left: 0;
+		top: .5rem;
+		background-color: yellow;
+		padding: .3rem;
+	}
+}

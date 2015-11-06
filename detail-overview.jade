@@ -1,0 +1,44 @@
+// header
+include ./includes/head.jade
+    body.detail
+        include ./includes/page-header.jade
+        main.main-page
+            article
+                //include ./includes/carousel-detail.jade
+                section.main-content
+                    div.title
+                        h2.content-title
+                            | Bugatti Veyron 16.4 Villa D ’Este Centenary
+                        p
+                            span.price € 975.000
+                            a.favorite(href="nu.nl") Favoriet
+                            a.insurance(href="nu.nl") Verzekeren
+                            //img(src="/img/bugatti1.png");
+                    aside.dealer
+                        a.email.button.button-fullwidth
+                            span Email de aanbieder jongedddd
+
+                    include ./includes/tabs.jade
+                    include ./includes/overview.jade
+                        // dealerstuff
+                        aside.dealer
+                            div.dealer-details
+                                h3.dealer-title Aanbieder
+                                p.dealer-name PON luxury car
+                                small.dealer-classification Officiële dealer
+                                div.h-adres.dealer-address
+                                    p.address Zuiderinslag 6
+                                    p
+                                        span.postal-code 3833 BP
+                                        span.locallity Leusden
+                                    p.url
+                                        a(href="www.bentley-leusden.nl") www.bentley-leusden.nl
+
+
+
+                // dealer stuff
+            //    include ./includes/dealer.jade
+
+
+        // footer
+        include ./includes/footer.jade

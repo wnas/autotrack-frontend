@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "typography";
+@import "button";
+@import "tabs";
+@import "overview";
+@import "dealer-details";
+@import "header";
+@import "navigation";
+@import "layout";
+
+main {
+    padding: 0 1rem;
+    width: 100%;
+    overflow: hidden;
+    article {
+        width: 100%;
+    }
+    section {
+        width: calc(100vw - 2rem);
+    }
+}
+.carousel {
+    height: calc(250px * .7);
+    overflow: hidden;
+    figure {
+    //width: 24000px;
+}
+}
+div.image {
+    display: inline-block;
+    height: calc(250px * .7);
+    width: calc(333px * .7);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
