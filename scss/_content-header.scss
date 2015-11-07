@@ -1,4 +1,47 @@
 // stuff
 .o-content-header {
-    
+    padding: 4rem 0;
+    display: table;
+    .m-car-header,
+    .m-pagination {
+        display: table-cell;
+    }
+    .m-car-header {
+        width: 72.8rem;
+    }
+    .m-pagination {
+        text-align: center;
+    }
+    .a-pagination {
+        list-style: none;
+        display: inline-block;
+        padding: .5rem;
+    }
+    .a-pagination-list {
+        border: 1px solid $blue;
+        border-width: 0 1px;
+
+
+    }
+
+    .a-car-detail {
+        list-style: none;
+        display: inline-block;
+        &:not(:last-child):after {
+            content: ' •';
+            font-size: 2rem;
+            padding-right: 1rem;
+            margin-right: 1rem;
+        }
+    }
+    .a-car-title {
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
+    .a-car-price {
+        font-size: 2.8rem;
+        &:after {
+            content: 'g';
+        }
+    }
 }

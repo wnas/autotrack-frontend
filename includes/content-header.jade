@@ -1,18 +1,32 @@
 header.o-content-header
-    div.car-header
-        h1.car-title
+    div.m-car-header
+        h1.a-car-title
             | Bugatti Veyron 16.4 Villa D ’Este Centenary
 
-        ul.car-details
-            li.car-detail.car-price
-                span € 975.000
-            li.car-detail.car-milage
-                span 8.507 km
-            li.car-detail.car-date
-                span maart 2012
-            li.car-detail.car-transmission
-                span Automaat
+        div
+            ul.a-car-details
+                li.a-car-detail.a-car-price
+                    span € 975.000
+                li.a-car-detail.a-car-milage
+                    span 8.507 km
+                li.a-car-detail.a-car-date
+                    span maart 2012
+                li.a-car-detail.a-car-transmission
+                    span Automaat
 
-        p.car-actions
-            a.car-action.car-favorite(href="nu.nl") Favoriet
-            a.car-action.car-insurance(href="nu.nl") Verzekeren
+            p.a-car-actions
+                a.a-car-action.a-car-favorite(href="nu.nl") Favoriet
+                a.a-car-action.a-car-insurance(href="nu.nl") Verzekeren
+
+    ul.m-pagination
+        li.a-pagination.a-pagination-prev
+            a(href="#")
+                span(aria-hidden="true") &laquo;
+                |  Vorige
+        li.a-pagination.a-pagination-list
+            a(href="#")
+                Terug naar de lijst
+        li.a-pagination.a-pagination-next
+            a(href="#")
+                | Volgende
+                span(aria-hidden="true")  &raquo;
