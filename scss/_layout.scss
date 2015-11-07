@@ -1,5 +1,8 @@
 // all things layout
-
+html,
+body {
+    height: 100%;
+}
 // desktop, full width with margin left and right
 .header-content,
 .o-content-header,
@@ -88,16 +91,13 @@ footer {
         display: table;
         article {
             display: table-cell;
-            width: 728px;
-            padding-right: 40px;
+            width: 72.8rem;
+            padding-right: 4rem;
         }
         aside {
             display: table-cell;
-            width: 300;
-            .dealer-details {
-                padding: 10px;
-                background-color: $bg-light-gray;
-            }
+            background-color: #BD10E0;
+
         }
     }
 }

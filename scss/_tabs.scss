@@ -12,6 +12,9 @@
     margin-bottom: -1px;
     a {
         color: #fff;
+        &:hover {
+            color: $yellow;
+        }
     }
 }
 .a-tab-active {

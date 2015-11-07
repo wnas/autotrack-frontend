@@ -1,13 +1,17 @@
 .overview-list {
     line-height: 2;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #ccc;
+    
     margin: 0 0 1rem;
     dt,dd {
         display: inline-block;
         width: 45%;
     }
+    dt {
+        font-weight: 300;
+    }
     dd {
         margin: 0;
+        font-weight: 500;
     }
 }

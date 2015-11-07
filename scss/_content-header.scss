@@ -8,20 +8,10 @@
     }
     .m-car-header {
         width: 72.8rem;
-    }
-    .m-pagination {
-        text-align: center;
-    }
-    .a-pagination {
-        list-style: none;
-        display: inline-block;
-        padding: .5rem;
-    }
-    .a-pagination-list {
-        border: 1px solid $blue;
-        border-width: 0 1px;
-
-
+        div {
+            display: table;
+            width: 100%;
+        }
     }
 
     .a-car-detail {
@@ -44,4 +34,28 @@
             content: 'g';
         }
     }
+    .a-car-details,
+    .a-car-actions {
+        display: table-cell;
+    }
+    .a-car-actions {
+        text-align: right;
+    }
+    .a-car-action:first-child {
+        padding-right: 1rem;
+    }
+
+    .m-pagination {
+        text-align: center;
+    }
+    .a-pagination {
+        list-style: none;
+        display: inline-block;
+        padding: .5rem;
+    }
+    .a-pagination-list {
+        border: 1px solid $blue;
+        border-width: 0 1px;
+    }
+
 }
