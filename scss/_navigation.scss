@@ -1,23 +1,34 @@
-.nav {
+.o-header-page {
+	background-color: $yellow;
+}
+.o-header-content {
+	height: 5rem;
+}
+.m-nav-bar{
 	list-style:none;
 	padding:0;
 	position: relative;
 }
-.nav-item {
+.a-nav-item {
 	display: inline-block;
 	position: relative;
 }
-.nav-item-home {
-	width: 8rem;
+.a-nav-item-home {
+	width: 18rem;
 	background: url(../img/logo-autotrack.svg);
-	height: 1.5rem;
-	background-size: contain;
+	height: 5rem;
+	background-size: 15rem;
 	background-repeat: no-repeat;
+	background-position: left center;
+	padding-right: 3rem;
 }
-.nav-link {
+.a-nav-link {
 	text-decoration: none;
 	color: #000;
-	font-size: 14px;
+	height: 5rem;
+	display: block;
+	line-height: 5rem;
+	padding: 0 1rem;
 }
 .dropdown-menu {
 	display: none;
