@@ -21,6 +21,9 @@
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-right: 3rem;
+	span {
+		opacity: 0.01;
+	}
 }
 .a-nav-link {
 	text-decoration: none;
