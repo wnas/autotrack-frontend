@@ -1,6 +1,29 @@
 .o-carousel-top {
-    .a-image {
-        height: 250px;
+    background-color: $bg-dark-gray;
+    height: 180px;
+    overflow: hidden;
+    width: 100%;
+    figure {
+        width: 2400px;
+        position: relative;
+        overflow: hidden;
+        -moz-animation:carousel 30s infinite;
+    -webkit-animation:carousel 30s infinite;
+    animation:carousel 30s infinite;
     }
-    height: 250px;
+}
+.a-image {
+    width: 240px;
+    float: left;
+    img{
+       display:block;
+       width:100%;
+       max-width:100%;
+    }
+}
+
+@keyframes carousel{
+    0%    { left:0; }
+    50%  { left : -1600px}
+    100%  { left:0; }
 }
