@@ -1,1 +1,3 @@
 # autotrack-frontend
+
+this uses jade for templates, sass for css and gulp for building. do npm install in this dir and then gulp, the files are in the dist directory...
