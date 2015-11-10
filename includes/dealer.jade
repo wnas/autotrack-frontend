@@ -10,3 +10,18 @@ div.o-dealer
                 span.postal-code 5322 AA
                 span.locallity Leusden
             p.url www.bentley-leusden.nl
+        ul.m-dealer-actions
+        each val,i in [
+            {'label':'Bel ons',
+            'data':'0123456789'},
+            {'label':'Plan route',
+            'data':'maps.google.nl'},{'label':'Bezoek onze site',
+            'data':'www.site.nl'},{
+            'label','Bekijk onze voorraad',
+            'data':'www.voorraad.nl'},{'label','2.165 beoordelingen',
+            'data':'www.beoordelingen.nl'},{'label','Chat is online'
+            'data':'www.chat.nl'}]
+
+            li.a-dealer-action
+                a.a-dealer-link
+                    span= label
