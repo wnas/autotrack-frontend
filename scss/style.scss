@@ -15,19 +15,12 @@
 main {
     width: 100%;
     overflow: hidden;
-    article {
-        width: 100%;
-    }
-    section {
-        width: calc(100vw - 2rem);
-    }
+    
 }
 .carousel {
     height: calc(250px * .7);
     overflow: hidden;
-    figure {
-    //width: 24000px;
-}
+
 }
 div.image {
     display: inline-block;

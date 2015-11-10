@@ -33,21 +33,33 @@
 	line-height: 5rem;
 	padding: 0 1rem;
 }
-.dropdown-menu {
+.m-dropdown-menu {
 	display: none;
 	position: absolute;
 	top: 1rem;
 	left: 0;
+	z-index:10;
+	background-color: $bg-dark-gray;
+	
+
 }
-.nav-link:hover + .dropdown-menu {
+.a-dropdown-item {
+	list-style: none;
+	outline: 1px solid red;
+	.a-nav-link {
+		height: 3rem;
+		color: #fff;
+	}
+}
+.a-nav-link:hover + .m-dropdown-menu {
 	display:block;
 }
 
 @media (max-width: $phablet) {
-	.nav-item:not(.nav-item-home) {
+	.a-nav-item:not(.a-nav-item-home) {
 		display:none;
 	}
-	.navbar:hover .nav-item {
+	.m-nav-bar:hover .a-nav-item {
 		display:block;
 		left: 0;
 		top: .5rem;

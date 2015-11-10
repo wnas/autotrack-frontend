@@ -1,16 +1,30 @@
 // all things layout
-html,
-body {
-    height: 100%;
+html {
+    min-height: 100%;
 }
 // desktop, full width with margin left and right
 .o-header-content,
 .o-content-header,
 .footer-content,
-.main-content,
+.o-main-content,
 .m-tabs {
     width: 106.8rem;
     margin: 0 auto;
+}
+.o-main-content {
+    display: table;
+    &  > article,
+    & > aside {
+        display: table-cell;
+    }
+    & > article {
+        width: 72.8rem;
+        margin-right: 4rem;
+    }
+    & > aside {
+        width: 30rem;
+        background-color: rebeccapurple;
+    }
 }
 
 .content-title-bar {
@@ -23,8 +37,7 @@ body {
         display: inline-block;
     }
     .dealer {
-        float:right;
-        width: 300px;
+
     }
 }
 

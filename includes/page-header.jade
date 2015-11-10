@@ -1,3 +1,5 @@
+
+
 header.o-header-page
     section.o-header-content
         nav.m-header-nav
@@ -5,7 +7,14 @@ header.o-header-page
                 li.a-nav-item.a-nav-item-home
                     a.a-nav-link
                         span home
-                each val in ['Auto zoeken', 'Auto samenstellen','Financieel','Mijn autotrack']
+                each val,i in ['Auto zoeken', 'Auto samenstellen','Financieel','Mijn autotrack']
+
                     li.a-nav-item
                         a.a-nav-link
                             span= val
+                        if i === 3
+                            ul.m-dropdown-menu
+                                each val,i in ['item1','item2',item3]
+                                    li.a-dropdown-item
+                                        a.a-nav-link
+                                            span= val

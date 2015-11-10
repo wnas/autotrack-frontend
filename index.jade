@@ -1,0 +1,25 @@
+// header
+include ./includes/head.jade
+    body.test.foo
+        include ./includes/page-header.jade
+
+
+        main.o-main-page
+
+            include ./includes/carousel-detail.jade
+
+            include ./includes/tabs.jade
+
+            include ./includes/content-header.jade
+
+
+            section.o-main-content
+                article
+                    include ./includes/overview.jade
+
+                    include ./includes/dealer.jade
+
+                aside
+                    div.a-banner hi
+
+        include ./includes/footer.jade
