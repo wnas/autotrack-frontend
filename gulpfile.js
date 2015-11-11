@@ -6,6 +6,7 @@ var jade = require('gulp-jade');
 var watch = require('gulp-watch');
 var livereload = require('gulp-livereload');
 var image = require('gulp-image');
+var autoprefixer = require('gulp-autoprefixer');
 
 var pages = './dist/*.html';
 
@@ -13,6 +14,10 @@ var pages = './dist/*.html';
 gulp.task('sass', function () {
   gulp.src('./scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
     .pipe(gulp.dest('./dist/css'));
 });
 

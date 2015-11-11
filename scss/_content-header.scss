@@ -17,7 +17,7 @@
     .a-car-detail {
         list-style: none;
         display: inline-block;
-        &:not(:last-child):after {
+        &:not(:first-child):before {
             content: ' •';
             font-size: 2rem;
             padding-right: 1rem;
@@ -54,8 +54,9 @@
         padding: .5rem;
     }
     .a-pagination-list {
-        border: 1px solid $blue;
+        border: 1px solid #ccc;
         border-width: 0 1px;
+        line-height: .5;
     }
 
 }

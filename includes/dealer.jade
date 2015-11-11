@@ -11,17 +11,8 @@ div.o-dealer
                 span.locallity Leusden
             p.url www.bentley-leusden.nl
         ul.m-dealer-actions
-        each val,i in [
-            {'label':'Bel ons',
-            'data':'0123456789'},
-            {'label':'Plan route',
-            'data':'maps.google.nl'},{'label':'Bezoek onze site',
-            'data':'www.site.nl'},{
-            'label','Bekijk onze voorraad',
-            'data':'www.voorraad.nl'},{'label','2.165 beoordelingen',
-            'data':'www.beoordelingen.nl'},{'label','Chat is online'
-            'data':'www.chat.nl'}]
+            each val,i in [{'label':'Bel ons','data':'tel:0123456789','class':'a-dealer-call'},{'label':'Plan route','data':'maps.google.nl','class':'a-dealer-map'},{'label':'Bezoek onze site','data':'www.site.nl','class':'a-dealer-url'},{'label':'Bekijk onze voorraad','data':'www.voorraad.nl','class':'a-dealer-stock'},{'label':'2.165 beoordelingen','data':'www.beoordelingen.nl','class':'a-dealer-foo'},{'label':'Chat is online','data':'www.chat.nl','class':'a-dealer-chat'}]
 
-            li.a-dealer-action
-                a.a-dealer-link
-                    span= label
+                li.a-dealer-action
+                    a(href=val.data,class="a-dealer-link "+val.class)
+                        span= val.label

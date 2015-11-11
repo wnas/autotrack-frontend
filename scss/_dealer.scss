@@ -1,0 +1,20 @@
+.o-dealer-content {
+    display: table;
+    width: 100%;
+    .m-dealer-data,
+    .m-dealer-actions {
+        display: table-cell;
+        width:50%;
+    }
+    .m-dealer-actions {
+       columns: 2;
+    }
+    .a-dealer-action {
+        list-style: none;
+        display: block;
+
+    }
+    .a-dealer-link {
+        padding-left: 2rem;
+    }
+}
