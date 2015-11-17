@@ -25,6 +25,21 @@ html {
         width: 30rem;
         background-color: rebeccapurple;
     }
+    @include breakpoint(phablet) {
+        background-color: green;
+    }
+    @include breakpoint(tablet) {
+        background-color: red;
+    }
+    @include breakpoint(laptop) {
+        background-color: blue;
+    }
+    @include breakpoint(mobileonly) {
+        background-color: yellow;
+    }
+    @include breakpoint(desktop) {
+        background-color: lime;
+    }
 }
 
 .content-title-bar {
